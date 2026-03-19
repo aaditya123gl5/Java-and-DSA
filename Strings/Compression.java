@@ -1,6 +1,6 @@
 package Strings;
 import java.util.*;
-public class Practice {
+public class Compression {
    public static String compression1(String str){
       String s=String .valueOf(str.charAt(0));
       for(int i=1;i<str.length();i++){
