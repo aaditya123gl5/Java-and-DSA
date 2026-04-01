@@ -1,4 +1,4 @@
-package Additional;
+package Oops;
 
 public class Main {
     public static void doAnimalStuff(Animal en,String speed){
