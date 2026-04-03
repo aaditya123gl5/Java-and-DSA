@@ -1,4 +1,4 @@
-package Additional;
+package Oops;
 
 public class Goat {
     private String name;
