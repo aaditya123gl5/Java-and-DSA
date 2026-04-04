@@ -1,5 +1,5 @@
 package Oops;
-//Polymorphism
+//Polymorphism using Inheritance
 
 public class Car1{
     private String description;
