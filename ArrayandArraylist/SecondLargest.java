@@ -7,5 +7,7 @@ public class SecondLargest {
     Arrays.sort(arr);
     int l=arr.length;
     System.out.println(arr[l-2]);
-}
+    scn.close();
+    }
+
 }
