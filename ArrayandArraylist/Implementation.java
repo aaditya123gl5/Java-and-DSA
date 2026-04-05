@@ -1,4 +1,4 @@
-package Additional;
+package ArrayandArraylist;
 import java.util.*;
 
 public class Implementation {
