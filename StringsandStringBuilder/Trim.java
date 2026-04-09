@@ -6,6 +6,7 @@ public class Trim {
         //System.out.println(str);
         //System.out.println(str.trim());
         System.out.println(str.strip());
+        System.out.println(str.replace(" ",""));
 
     }
 
