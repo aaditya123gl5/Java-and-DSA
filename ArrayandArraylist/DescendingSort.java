@@ -7,7 +7,7 @@ public class DescendingSort {
     Random rd=new Random();
     int[] arr=new int[5];
     for(int i=0;i<arr.length;i++){
-        arr[i]=rd.nextInt(50);
+        arr[i]=rd.nextInt(40);
     }
     System.out.println("Before Sorting:"+Arrays.toString(arr));
     for(int i=0;i<arr.length-1;i++){
