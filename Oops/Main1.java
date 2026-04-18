@@ -8,7 +8,7 @@ public class Main1 {
         runRace(car);
 
         Car1 ferrari = new GasPoweredCar("2022 Blue Ferrari 296 GTS",
-                15.4, 6);
+                15.45, 6);
         runRace(ferrari);
 
         Car1 ferrariHybrid = new HybridCar("2022 Black Ferrari SF90 Stradale",
