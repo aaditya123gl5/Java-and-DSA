@@ -16,7 +16,7 @@ public class MaxElement {
             }
         }
         System.out.println(max);
-        
+        scn.close();
     }
-    
+   
 }
