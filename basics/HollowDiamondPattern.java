@@ -28,8 +28,10 @@ public class HollowDiamondPattern {
             System.out.println();  
           
         }
+        scn.close();
        
 
     }
+    
     
 }
