@@ -21,6 +21,7 @@ public class Pattern3 {
             System.out.println();
             stars++;
             spaces--;
-    }
-    }
+    }  
+    scn.close();  
+   }
 }
