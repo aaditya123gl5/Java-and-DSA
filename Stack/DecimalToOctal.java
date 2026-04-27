@@ -17,6 +17,6 @@ public class DecimalToOctal {
         while(!st.isEmpty()){
             System.out.print(st.pop());
         } 
-
+        scn.close();
     }
 }
