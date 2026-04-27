@@ -21,6 +21,7 @@ public class RotateNo {
     int mult = (int)Math.pow(10, counter - k);
     int res = rem * mult + n;
     System.out.println(res);
+    scn.close();
 
   }
 }
