@@ -24,6 +24,8 @@ public class TwoDimensionalArray {
         }
         System.out.println();
     }
-    }
+     scn.close();
     
+    }
+   
 }
