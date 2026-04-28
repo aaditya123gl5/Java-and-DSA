@@ -8,7 +8,6 @@ public class TwoDimensionalArray {
     int n = scn.nextInt();
     int m = scn.nextInt();
     int[][] arr = new int[n][m];
-    
     for(int rows = 0; rows <= n-1; rows++)
     {
         for(int cols = 0; cols <= m-1; cols++)
