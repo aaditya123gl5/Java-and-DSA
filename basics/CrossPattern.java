@@ -15,8 +15,9 @@ public class CrossPattern {
                 }
             }
             System.out.println();
-            
+
         }
+        scn.close();
         
     }
     
