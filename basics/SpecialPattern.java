@@ -5,6 +5,9 @@ public class SpecialPattern {
     public static void main(String[]args){   
     Scanner scn=new Scanner(System.in);
     int n=scn.nextInt();
+    if(n%2==0){
+        n=n+1;
+    }
     int os=n/2;
     int is=-1;
     for(int i=1;i<=n;i++){
