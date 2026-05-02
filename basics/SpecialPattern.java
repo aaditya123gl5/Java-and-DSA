@@ -30,6 +30,7 @@ public class SpecialPattern {
             is-=2;
         }
          System.out.println();
+         scn.close();
 
     }
    
