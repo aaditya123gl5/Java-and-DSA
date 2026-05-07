@@ -16,6 +16,8 @@ public class FibonacciPattern {
             }
             System.out.println();
         }
+        scn.close();
+    
     }
     
 }
