@@ -10,7 +10,7 @@ public class BasicClass {
         System.out.println(type);
     }
     public static void main(String[] args){
-        BasicClass b=new BasicClass("Bahubali");
+        BasicClass b=new BasicClass("Bahubali 2");
         b.watchMovie();
     }
     
