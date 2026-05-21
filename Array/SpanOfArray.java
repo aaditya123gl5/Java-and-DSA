@@ -21,7 +21,8 @@ public class SpanOfArray {
                 min=arr[i];
             }
         }
-        System.out.println(max-min);
+        int c=max-min;
+        System.out.println(c);
 
     }
     
