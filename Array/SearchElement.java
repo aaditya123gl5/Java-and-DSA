@@ -14,6 +14,8 @@ public class SearchElement {
         for(int i=0;i<arr.length;i++){
             if(arr[i]==d){
                 idx=i;
+                break;
+                
             }
         }
         if(idx==-1){
@@ -23,6 +25,8 @@ public class SearchElement {
         else{
         System.out.println("Element is found at " + (idx+1) + " position");
         }
+        scn.close();
     }
+    
 
 }
