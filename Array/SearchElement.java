@@ -16,7 +16,13 @@ public class SearchElement {
                 idx=i;
             }
         }
-        System.out.println(idx);
+        if(idx==-1){
+            System.out.println("Element is not found");
 
+        }
+        else{
+        System.out.println("Element is found at " + (idx+1) + " position");
+        }
     }
+
 }
