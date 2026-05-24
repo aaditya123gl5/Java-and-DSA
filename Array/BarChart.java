@@ -5,6 +5,7 @@ public class BarChart {
     Scanner scn=new Scanner(System.in);
     int n=scn.nextInt();
     int[] arr=new int[n];
+    System.out.println("Enter array elements");
     for(int i=0;i<arr.length;i++){
         arr[i]=scn.nextInt();
     }
