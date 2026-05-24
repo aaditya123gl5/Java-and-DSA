@@ -4,6 +4,7 @@ import java.util.*;
 public class SpecialPattern {
     public static void main(String[]args){   
     Scanner scn=new Scanner(System.in);
+    System.out.println("Enter size of pattern");
     int n=scn.nextInt();
     if(n%2==0){
         n=n+1;
