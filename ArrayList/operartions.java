@@ -6,9 +6,10 @@ import java.util.List;
 public class operartions {
     public static void main(String[]args){
     List<Integer> num = new ArrayList<>();
-    num.add(10);
+    System.out.println("Enter numbers");
     num.add(20);
     num.add(30);
+    num.add(50);
     System.out.println(num.size());
     num.remove(0);
     System.out.println(num);
