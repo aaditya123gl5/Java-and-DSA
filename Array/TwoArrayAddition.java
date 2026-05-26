@@ -42,7 +42,7 @@ public class TwoArrayAddition {
         if(c!=0){
             System.out.println(c);
         }
-
+        System.out.println("Resultant array is");
         for(int val:sum){
             System.out.println(val);
         }
