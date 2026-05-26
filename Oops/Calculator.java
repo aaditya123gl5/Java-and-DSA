@@ -6,7 +6,7 @@ public class Calculator {
     }
     public static void main(String[]args){
         Calculator c=new Calculator();
-        c.sum(5,10);
+        c.sum(5,18);
         printHello();
     }
     public static void printHello(){
