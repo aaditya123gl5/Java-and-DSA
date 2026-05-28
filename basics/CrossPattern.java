@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class CrossPattern {
     public static void main(String[]args){
+        System.out.println("Enter size of pattern");
         Scanner scn=new Scanner(System.in);
         int n=scn.nextInt();
         for(int i=1;i<=n;i++){
