@@ -35,5 +35,6 @@ public class PalindromicSubString {
         System.out.println("Enter the string");
         String str=scn.next();
         solution(str);
+        scn.close();
     }
 }
