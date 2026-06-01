@@ -22,9 +22,9 @@ public class DifferenceOfTwoArray {
       int i=a1.length-1;
       int j=a2.length-1;
       int k=diff.length -1;
-      while(k<=0){
+      while(k>=0){
         int d=0;
-        int alv=i>0?a1[i]:0;
+        int alv=i>=0?a1[i]:0;
         if(a2[j]+c>=alv){
             d=a2[j]+c-alv;
             c=0;
@@ -46,12 +46,11 @@ public class DifferenceOfTwoArray {
             break;
         }
       }
+      System.out.println("Resultant difference is");
       while(idx<diff.length){
         System.out.println(diff[idx]);
         idx++;
       }
-
-
     }
     
 }
