@@ -3,6 +3,7 @@ import java.util.*;
 public class DifferenceOfTwoArray {
     public static void main(String[]args){
       Scanner scn=new Scanner(System.in);
+      System.out.println("Subtract array 2 from array 1");
       System.out.println("Enter length of array1");
       int n1=scn.nextInt();
       int[] a1=new int[n1];
