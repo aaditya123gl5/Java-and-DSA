@@ -22,6 +22,7 @@ public class RemovalOfPrimeNo {
         Scanner scn=new Scanner(System.in);
         int n=scn.nextInt();
         ArrayList<Integer> a1=new ArrayList<>();
+        System.out.println("Enter elements in arraylist");
         for(int i=0;i<n;i++){
             a1.add(scn.nextInt());
         }
