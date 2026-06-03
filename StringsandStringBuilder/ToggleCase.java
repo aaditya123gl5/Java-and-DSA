@@ -20,6 +20,7 @@ public class ToggleCase {
         Scanner scn=new Scanner(System.in);
         System.out.println("Enter the String");
         String str=scn.nextLine();
+        System.out.println("Equivalent Toggled String is");
         System.out.println(togglecase(str));
     }
     
