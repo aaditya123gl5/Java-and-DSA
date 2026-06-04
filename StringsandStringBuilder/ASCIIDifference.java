@@ -3,6 +3,7 @@ import java.util.*;
 public class ASCIIDifference {
     public static void main(String[]args){
         Scanner scn=new Scanner(System.in);
+        System.out.println("Enter string");
         String str=scn.nextLine();
         System.out.println(Solution(str));
     }
