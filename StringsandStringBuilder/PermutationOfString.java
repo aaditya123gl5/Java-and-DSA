@@ -30,6 +30,7 @@ public class PermutationOfString {
         Scanner scn= new Scanner(System.in);
         System.out.println("Enter String");
         String str=scn.nextLine();
+        System.out.println("Possible permutation of given String");
         solution(str);
     }
 }
