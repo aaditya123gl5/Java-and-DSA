@@ -4,6 +4,7 @@ import java.util.*;
 public class BalancedBrackets {
     public static void main(String[]args){
         Scanner scn=new Scanner(System.in);
+        System.out.println("Enter expression");
         String str=scn.nextLine();
         Stack<Character> st=new Stack<>();
         for(int i=0;i<str.length();i++){
