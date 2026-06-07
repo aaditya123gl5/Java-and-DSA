@@ -2,6 +2,7 @@ package Oops;
 import java.util.*;
 
 public class AutoBoxing{
+    //record used 
     record Customer(String name, ArrayList<Double> transactions) {
 
     public Customer(String name, double initialDeposit) {
@@ -10,7 +11,6 @@ public class AutoBoxing{
         transactions.add(initialDeposit);
     }
 }
-
     private String name;
     private ArrayList<Customer> customers = new ArrayList<>(5000);
 
