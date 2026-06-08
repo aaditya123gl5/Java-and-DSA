@@ -1,6 +1,6 @@
 package Stack;
 import java.util.*;
-
+//Give true when duplicates brackets(Not necessary brackets) is found
 public class DuplicateBrackets {
     public static void main(String[]args){
     Scanner scn=new Scanner(System.in);
@@ -24,10 +24,7 @@ public class DuplicateBrackets {
         }else{
             st.push(ch);
         }
-       
-       
     }
      System.out.println(false);
-  
     }
 }
