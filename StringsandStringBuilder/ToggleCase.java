@@ -1,5 +1,7 @@
 package StringsandStringBuilder;
 import java.util.*;
+//Toggle Uppercase character to lowercase character and vice versa
+
 public class ToggleCase {
     public static String togglecase(String str){
         StringBuilder sb=new StringBuilder(str);
