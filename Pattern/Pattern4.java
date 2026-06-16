@@ -1,4 +1,4 @@
-package Additional;
+package Pattern;
 import java.util.*;
 
 public class Pattern4 {
