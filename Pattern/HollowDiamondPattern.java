@@ -1,9 +1,10 @@
-package Additional;
+package Pattern;
 import java.util.*;
 
 public class HollowDiamondPattern {
     public static void main(String[]args){
         Scanner scn=new Scanner(System.in);
+        System.out.println("Enter size of pattern");
         int n=scn.nextInt();
         int st=n/2+1;
         int sp=1;
