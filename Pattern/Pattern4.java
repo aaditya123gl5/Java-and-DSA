@@ -4,6 +4,7 @@ import java.util.*;
 public class Pattern4 {
     public static void main(String[]args){
     Scanner scn=new Scanner(System.in);
+    System.out.println("Enter size of pattern");
     int n=scn.nextInt();
     int sp=0;
     int st=n;
