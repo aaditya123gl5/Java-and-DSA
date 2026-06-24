@@ -4,6 +4,7 @@ import java.util.*;
 public class FibonacciPattern {
     public static void main(String[]args){
         Scanner scn=new Scanner(System.in);
+        System.out.println("Enter size of fibbonaci pattern");
         int n=scn.nextInt();
         int a=0;
         int b=1;
