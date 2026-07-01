@@ -1,7 +1,7 @@
 package Stack;
 import java.util.*;
 import java.io.*;
-public class NextElementGreaterToRight {
+public class NextElementGreaterToRight1 {
     public static void display(int[]a){
         StringBuilder sb=new StringBuilder();
         for(int val:a){
