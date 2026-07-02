@@ -1,42 +1,46 @@
 package Stack;
 import java.util.*;
 import java.io.*;
-public class NextElementGreaterToRight1 {
-    public static void display(int[]a){
+
+public class StockSpan {
+     public static void display(int[]a){
         StringBuilder sb=new StringBuilder();
         for(int val:a){
             sb.append(val+"\n");
         }
-        System.out.println("Resultant array is\n"+sb);
+        System.out.println("Stock of every element is\n"+sb);
     }
     public static void main(String[]args)throws Exception{
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter size of array");
+        System.out.println("Number of elements you want to enter");
         int n=Integer.parseInt(br.readLine());
         int[] a=new int[n];
-        System.out.println("Enter elements in array");
+        System.out.println("Enter elements ");
         for(int i=0;i<n;i++){
             a[i]=Integer.parseInt(br.readLine());
         }
-        int [] nge=solve(a);
-        display(nge);
+        int [] span=solve(a);
+        display(span);
     }
     public static int[] solve(int[]arr){
-        int[] nge=new int[arr.length];
+        int[] span=new int[arr.length];
         Stack<Integer> st=new Stack<>();
-        st.push(arr[arr.length-1]);
-        nge[arr.length-1]=-1;
-        for(int i=arr.length-2;i>=0;i--){
-            while(st.size()>0&&arr[i]>=st.peek()){
+        st.push(0);
+        span[0]=1;
+        for(int i=1;i<arr.length;i++){
+            while(st.size()>0&&arr[i]>arr[st.peek()]){
                 st.pop();
             }
             if(st.size()==0){
-                nge[i]=-1;
-            }else{
-                nge[i]=st.peek();
+                span[i]=i+1;
             }
-            st.push(arr[i]);
+            else{
+                span[i]=i-st.peek();
+            }
+            st.push(i);
         }
-        return nge;
-}
+        return span;
+        
+    }
+    
 }
