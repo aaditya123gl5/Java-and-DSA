@@ -13,10 +13,11 @@ public class BalancedBrackets {
                 st.push(ch);
             }
             else if(ch==')'){
-                boolean val=handleclosing(st,'(');
+                boolean val=handleclosing(st,'(');//To check corresponding opening braces
                 if(val==false){
                     System.out.println(val);
-                    return;
+                    return;//Use to stop program immediately.. otherwise rest else if blocks
+                           //also executed and print multiple result
                 }
             }
             else if(ch=='}'){
@@ -33,7 +34,10 @@ public class BalancedBrackets {
                     return;
                 }
             }
-            else{}
+
+            else{
+                //Ignores character and operators
+            }
         }
         if(st.size()==0){
             System.out.println(true);
