@@ -25,52 +25,52 @@ public class InfixEvaluation {
      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
      String exp = br.readLine();
     
-     Stack<Character> optors = new Stack<>();
-     Stack<Integer> opnds = new Stack<>();
+     Stack<Character> operators = new Stack<>();
+     Stack<Integer> operands = new Stack<>();
     
     
      for(int i=0; i<exp.length(); i++)
      {
         char ch = exp.charAt(i);
         if(ch=='('){
-            optors.push(ch);
+            operators.push(ch);
         }
         else if(Character.isDigit(ch)){
-            opnds.push(ch-'0'); //Character to Integer
+            operands.push(ch-'0'); //Character to Integer
         } 
         else if(ch==')'){
-            while(optors.peek()!='('){
-                char optor=optors.pop();
-                int v2=opnds.pop();
-                int v1=opnds.pop();
+            while(operators.peek()!='('){
+                char optor=operators.pop();
+                int v2=operands.pop();
+                int v1=operands.pop();
 
                 int  opv=  performOp(v1 , optor, v2);
-                opnds.push(opv);
+                operands.push(opv);
 
             }
-            optors.pop();
+            operators.pop();
         }
         else if(ch=='+'||ch=='-'||ch=='*'||ch=='/'){
-            while(optors.size()>0&&optors.peek()!='('&& precedence(ch)<=precedence(optors.peek())){
-               char optor=optors.pop();
-                int v2=opnds.pop();
-                int v1=opnds.pop();
+            while(operators.size()>0&&operators.peek()!='('&& precedence(ch)<=precedence(operators.peek())){
+               char optor=operators.pop();
+                int v2=operands.pop();
+                int v1=operands.pop();
 
                 int  opv=  performOp(v1 , optor, v2);
-                opnds.push(opv);
+                operands.push(opv);
 
             }
-            optors.push(ch);
+            operators.push(ch);
         }
     }
-    while(optors.size()!=0)
+    while(operators.size()!=0)
     {
-        int val2 = opnds.pop();
-        int val1 = opnds.pop();
-        char optor=optors.pop();
+        int val2 = operands.pop();
+        int val1 = operands.pop();
+        char optor=operators.pop();
         int opv = performOp(val1, optor, val2);
-        opnds.push(opv);
+        operands.push(opv);
     }
-    System.out.println(opnds.peek());
+    System.out.println(operands.peek());
  }
 }
