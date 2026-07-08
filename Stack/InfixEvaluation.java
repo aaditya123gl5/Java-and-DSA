@@ -35,7 +35,7 @@ public class InfixEvaluation {
         if(ch=='('){
             operators.push(ch);
         }
-        else if(Character.isDigit(ch)){
+        else if(Character.isDigit(ch)){ //Check whether a character is digit
             operands.push(ch-'0'); //Character to Integer
         } 
         else if(ch==')'){
@@ -52,7 +52,9 @@ public class InfixEvaluation {
         }
         else if(ch=='+'||ch=='-'||ch=='*'||ch=='/'){
             while(operators.size()>0&&operators.peek()!='('&& precedence(ch)<=precedence(operators.peek())){
-               char optor=operators.pop();
+                //Loop continues as long as operator stack is not empty or top of operator is not '('
+                //or Operator on stack has higher or qual precedence than the current operator
+                char optor=operators.pop();
                 int v2=operands.pop();
                 int v1=operands.pop();
 
