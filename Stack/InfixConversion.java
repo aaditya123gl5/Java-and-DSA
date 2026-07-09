@@ -1,10 +1,11 @@
-package Additional;
+package Stack;
 import java.util.*;
 import java.io.*;
 
 public class InfixConversion {
     public static void main(String[]args)throws Exception{
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter expression");
         String exp=br.readLine();
 
         Stack<String> post=new Stack<>();
