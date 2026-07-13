@@ -5,7 +5,7 @@ import java.io.*;
 public class PostfixEvaluationAndConversion {
     public static void main(String[]args)throws Exception{
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter expression");
+        System.out.println("Enter any postfix expression");
         String exp=br.readLine();
 
         Stack<Integer> vs=new Stack<>();
