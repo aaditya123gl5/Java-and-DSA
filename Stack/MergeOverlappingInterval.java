@@ -9,31 +9,31 @@ public class MergeOverlappingInterval {
         int[][] arr=new int[n][2];
         for(int j=0;j<n;j++){
             String line=br.readLine();
-            String[] part=line.split(" ");
-            arr[j][0]=Integer.parseInt(part[0]);
+            String[] part=line.split(" ");  // " " -> to split string at space
+            arr[j][0]=Integer.parseInt(part[0]);  /*Stores them as an interval in 2-D array*/
             arr[j][1]=Integer.parseInt(part[1]);
         }
         mergeInterval(arr);
 
     }
     public static void mergeInterval(int[][] arr){
-        Pair[] pairs=new Pair[arr.length];
+        Pair[] p=new Pair[arr.length];
         for(int i=0;i<arr.length;i++){
-            pairs[i]=new Pair(arr[i][0],arr[i][1]);
+            p[i]=new Pair(arr[i][0],arr[i][1]);
         }
-        Arrays.sort(pairs);
+        Arrays.sort(p);
         Stack<Pair> st=new Stack<>();
-        for(int i=0;i<pairs.length;i++){
+        for(int i=0;i<p.length;i++){
             if(i==0){
-                st.push(pairs[i]);
+                st.push(p[i]);
             }
             else{
                 Pair top=st.peek();
-                if(pairs[i].st>top.et){
-                    st.push(pairs[i]);
+                if(p[i].st>top.et){
+                    st.push(p[i]);
                 }
                 else{
-                    top.et=Math.max(top.et,pairs[i].et);
+                    top.et=Math.max(top.et,p[i].et);
                 }
             }
         }
@@ -42,13 +42,13 @@ public class MergeOverlappingInterval {
             rs.push(st.pop());
         }
         while(rs.size()>0){
-            Pair p=rs.pop();
-            System.out.println(p.st + " " + p.et);
+            Pair p1=rs.pop();
+            System.out.println(p1.st + " " + p1.et);
         }
     }
     public static class Pair implements Comparable<Pair>{
-        int et;
-        int st;
+        int et; //End time
+        int st; //Start time
         Pair(int st,int et){
             this.st=st;
             this.et=et;
