@@ -5,6 +5,7 @@ import java.io.*;
 public class SmallestNumberPattern  {
     public static void main(String[]args)throws Exception{
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter expression containing 'i' and 'd'");
         String str=br.readLine();
         Stack<Integer> st=new Stack<>();
         int num=1;
