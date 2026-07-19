@@ -27,7 +27,6 @@ public class ReverseAnArray {
     }
     public static void display(int[] a){
     StringBuilder sb = new StringBuilder();
-
     for(int val: a){
       sb.append(val + " ");
     }
