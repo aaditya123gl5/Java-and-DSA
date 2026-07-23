@@ -1,4 +1,4 @@
-package Additional;
+package Array;
 import java.util.*;
 
 public class AllSubsetsOfArray {
