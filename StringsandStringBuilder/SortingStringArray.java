@@ -1,4 +1,4 @@
-package Additional;
+package StringsandStringBuilder;
 import java.util.*;
 
 public class SortingStringArray {
@@ -7,6 +7,7 @@ public class SortingStringArray {
         str[0]="ram";
         str[1]="abc";
         str[2]="lmn";
+        Arrays.sort(str);
         System.out.println(Arrays.toString(str));
 
 
