@@ -1,4 +1,4 @@
-package Additional;
+package Array;
 import java.util.*;
 
 public class BinarySeach {
@@ -13,7 +13,7 @@ public class BinarySeach {
     int l= 0;
     int h = arr.length - 1;
     while(l <= h){
-        int m = (l+ h) / 2;
+        int m = l+ (h-l)/2;
         if(data > arr[m]){
            l= m + 1;
         } else if(data < arr[m]){
