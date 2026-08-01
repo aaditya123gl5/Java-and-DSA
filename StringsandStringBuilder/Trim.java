@@ -7,7 +7,8 @@ public class Trim {
         //System.out.println(str.trim());
         System.out.println(str.strip());
         System.out.println(str.replace(" ",""));
-
+         //s=s.replaceAll("[^a-zA-Z0-9]", "");
+         //to remove everything form string other than alphanumeric character
     }
 
     
