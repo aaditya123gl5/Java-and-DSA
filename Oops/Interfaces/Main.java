@@ -4,11 +4,11 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Bird bird = new Bird();
-        Animal animal = bird;
+        Animal animal = bird; //No object is created only reference is created
         FlightEnabled flier = bird;
         Trackable tracked = bird;
 
-        animal.move();
+        animal.move(); // Bird move->Flaps wing
 //        flier.move();
 //        tracked.move();
 

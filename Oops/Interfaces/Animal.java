@@ -1,18 +1,21 @@
 package Oops.Interfaces;
 
+//enum is being used as there exists fixed flight stages
 enum FlightStages implements Trackable {GROUNDED, LAUNCH, CRUISE, DATA_COLLECTION;
     @Override
-    public void track() {
+    public void track() { //Monitor current stage
 
         if (this != GROUNDED) {
             System.out.println("Monitoring " + this);
         }
     }
 
-    public FlightStages getNextStage() {
+    public FlightStages getNextStage() { 
         FlightStages[] allStages = values();
-        return allStages[(ordinal() + 1) % allStages.length];
+        return allStages[(ordinal() + 1) % allStages.length];//creates circular transition
     }
+    /*values() return enum element like GROUNDED, LAUNCH */
+    /*ordinal() return index of enum element */
 }
 
 record DragonFly(String name, String type) implements FlightEnabled {
@@ -20,29 +23,25 @@ record DragonFly(String name, String type) implements FlightEnabled {
     public void takeOff() {
 
     }
-
     @Override
     public void land() {
 
     }
-
     @Override
     public void fly() {
-
     }
 }
 
 class Satellite implements OrbitEarth {
 
-    FlightStages stage = FlightStages.GROUNDED;
-
+    FlightStages stage = FlightStages.GROUNDED; //stage->GROUNDED
+    
     public void achieveOrbit() {
         transition("Orbit achieved!");
     }
 
     @Override
     public void takeOff() {
-
         transition("Taking Off");
     }
 
@@ -66,22 +65,23 @@ class Satellite implements OrbitEarth {
         stage.track();
     }
 }
-
+//every object orbiting earth
 interface OrbitEarth extends FlightEnabled {
     void achieveOrbit();
-
+   //private->This method can only be used inside the OrbitEarth interface.
     private static void log(String description) {
-
-        var today = new java.util.Date();
+        var today = new java.util.Date(); //Date class store current date and time
         System.out.println(today + ": " + description);
     }
 
     private void logStage(FlightStages stage, String description) {
 
-        description = stage + ": " + description;
+        //stage → a flight stage (e.g., GROUNDED, LAUNCH, CRUISE)
+        //desription → a text message
+        description = stage + ": " + description; 
         log(description);
     }
-
+    //
     @Override
     default FlightStages transition(FlightStages stage) {
 
@@ -101,9 +101,8 @@ interface FlightEnabled {
     void fly();
 
     default FlightStages transition(FlightStages stage) {
-//        System.out.println("transition not implemented on " + getClass().getName());
-//        return null;
-
+    //System.out.println("transition not implemented on " + getClass().getName());
+    //return null;
         FlightStages nextStage = stage.getNextStage();
         System.out.println("Transitioning from " + stage + " to " + nextStage);
         return nextStage;
