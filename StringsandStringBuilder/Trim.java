@@ -5,7 +5,8 @@ public class Trim {
         String str=" Ram and Shyam ";
         //System.out.println(str);
         //System.out.println(str.trim());
-        System.out.println(str.strip());
+        //.trim() to remove all trailing spaces
+        System.out.println(str.strip());// to remove all leading and trailing spaces
         // s=s.trim().replaceAll("\\s+", " ");
         //to remove all unncessary spaces
         System.out.println(str.replace(" ",""));
