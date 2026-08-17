@@ -9,6 +9,8 @@ public class BinarySeach {
     for(int i = 0; i < arr.length; i++){
            arr[i] = scn.nextInt();
     }
+    //int[] expected=heights.clone();
+    // to create a clone array of array named heights
     int data=scn.nextInt();
     int l= 0;
     int h = arr.length - 1;
