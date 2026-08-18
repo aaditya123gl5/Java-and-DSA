@@ -33,7 +33,7 @@ class Outer1{
             //System.out.println(Outer.this.x);
         }
 
-        static void fun2() {
+        void fun2() {
             System.out.println("Hello");
         }
     }
