@@ -49,7 +49,6 @@ class Student extends Object implements Cloneable {
         if(obj == null) {
             return false;
         }
-
         // Check if both classes are of type Student
         // If not checked --> ClassCastExceptions
         if(obj.getClass() != this.getClass()) {
