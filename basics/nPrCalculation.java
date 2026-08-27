@@ -18,6 +18,7 @@ public class nPrCalculation {
         int nfact=fact(n);
         int nmrfact=fact(n-r);
         int nPr=nfact/nmrfact;
+        System.out.println("Possible number of permutation are");
         System.out.println(n+"P"+r+"="+nPr);
     }
 }
