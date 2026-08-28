@@ -7,6 +7,7 @@ public class FunctionOfString {
         String s2 = new String("abc");
         
         // Length/ Emptiness
+        // String s1="     ";
         // System.out.println(s1.length()); // 5
         // System.out.println(s1.isEmpty()); // false
         // System.out.println(s1.isBlank()); // true
