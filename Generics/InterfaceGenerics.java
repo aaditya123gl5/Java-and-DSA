@@ -5,7 +5,8 @@ public class InterfaceGenerics {
         Box<Fish> b1 = new Box<>();
     }
 }
-
+//T extends Animal-> This box class can work with Animal and its subtype (Dog,Fish)
+//T extends Animal & Swimmable -> This box class can work with only Fish
 class Box<T extends Animal & Swimmable> {
     T value;
 }
