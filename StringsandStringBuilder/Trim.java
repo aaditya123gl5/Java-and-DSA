@@ -10,8 +10,8 @@ public class Trim {
         // s=s.trim().replaceAll("\\s+", " ");
         //to remove all unncessary spaces
         System.out.println(str.replace(" ",""));
-         //s=s.replaceAll("[^a-zA-Z0-9]", "");
-         //to remove everything form string other than alphanumeric character
+        //s=s.replaceAll("[^a-zA-Z0-9]", "");
+        //to remove everything form string other than alphanumeric character
     }
 
     
