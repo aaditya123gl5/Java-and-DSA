@@ -76,5 +76,7 @@ public class FunctionOfString {
         System.out.println("Hello" + " " + name + "," + " " + "your age is" + " " + age);
         System.out.println(String.format("Hello %s, your age is %s", name, age));
         
+        //Check that given character is Alphanumeric
+        //Character.isLetterOrDigit(char ch);
     }
 }
