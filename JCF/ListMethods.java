@@ -12,8 +12,6 @@ public class ListMethods {
 
     // 3. addAll(Collection<? extends E> c) - Adds all elements of another collection.
     // list.addAll(List.of(2, 3, 4));
-
-
     // 4. addAll(int index, Collection<? extends E> c) - Adds elements from given index.
     // list.addAll(0, List.of(9, 8, 7));
 
