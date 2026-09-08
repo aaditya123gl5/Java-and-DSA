@@ -1,4 +1,4 @@
-package Oops.Interfaces;
+package Oops;
 
 public class DiamondProblem {
     public static void main(String[] args) {
