@@ -24,3 +24,5 @@
 - ✅ Arrays
 - ✅ ArrayList
 - ⏳ Stack
+-  # Enumeration
+
