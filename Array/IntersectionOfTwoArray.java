@@ -11,8 +11,8 @@ public class IntersectionOfTwoArray {
         for(int word:arr1){
             set1.add(word);
         }
-        for(int word2:arr2){
-            set2.add(word2);
+        for(int word3:arr2){
+            set2.add(word3);
         }
         set1.retainAll(set2);
         System.out.println(set1);
