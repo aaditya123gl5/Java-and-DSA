@@ -18,7 +18,7 @@ public class WilcardGenericUpperBound {
 
         fun(dogs);
     }
-    static void fun(List<? extends Animal> values) {
+    static void fun(List<? extends Animal1> values) {
         // for(Animal a : values) {
         // a.eat();
         // }
@@ -27,7 +27,7 @@ public class WilcardGenericUpperBound {
     }
 }
 
-class Animal {
+class Animal1 {
     void eat() {
         System.out.println("Animal Eating");
     }
@@ -37,7 +37,7 @@ class Animal {
     }
 }
 
-class Dog extends Animal {
+class Dog extends Animal1 {
     @Override
     void eat() {
         System.out.println("Dog Eating");
@@ -48,6 +48,6 @@ class Dog extends Animal {
     }
 }
 
-class Cat extends Animal {
+class Cat extends Animal1 {
 
 }

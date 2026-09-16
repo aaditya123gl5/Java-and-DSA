@@ -6,18 +6,18 @@ public class WildCardGenericLowerBound {
 
     public static void main(String[] args) {
 
-        List<Animal> animals = new ArrayList<>();
+        List<Animal2> animals = new ArrayList<>();
 
-        animals.add(new Animal());
-        animals.add(new Animal());
+        animals.add(new Animal2());
+        animals.add(new Animal2());
 
         fun(animals);
     }
 
-    public static void fun(List<? super Animal> values) {
+    public static void fun(List<? super Animal2> values) {
 
         // Writing
-        values.add(new Animal());
+        values.add(new Animal2());
         values.add(new Dog());
         values.add(new Cat());
         values.add(new Labrador());
@@ -29,7 +29,7 @@ public class WildCardGenericLowerBound {
     }
 }
 
-class Animal {
+class Animal2 {
 
     void eat() {
         System.out.println("Animal Eating");
@@ -40,7 +40,7 @@ class Animal {
     }
 }
 
-class Dog extends Animal {
+class Dog extends Animal2 {
 
     @Override
     void eat() {
@@ -55,5 +55,5 @@ class Dog extends Animal {
 class Labrador extends Dog {
 }
 
-class Cat extends Animal {
+class Cat extends Animal2{
 }

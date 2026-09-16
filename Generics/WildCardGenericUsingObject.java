@@ -13,9 +13,9 @@ public class WildCardGenericUsingObject {
         dogs.add(new Dog());
         fun(dogs);
 
-        List<Animal> animals = new ArrayList<>();
-        animals.add(new Animal());
-        animals.add(new Animal());
+        List<Animal3> animals = new ArrayList<>();
+        animals.add(new Animal3());
+        animals.add(new Animal3());
         fun(animals);
 
     }
@@ -33,7 +33,7 @@ public class WildCardGenericUsingObject {
 
 }
 
-class Animal {
+class Animal3 {
     void eat() {
         System.out.println("Animal Eating");
     }
@@ -43,7 +43,7 @@ class Animal {
 
 }
 
-class Dog extends Animal {
+class Dog extends Animal3 {
     @Override
     void eat() {
          System.out.println("Dog Eating");
