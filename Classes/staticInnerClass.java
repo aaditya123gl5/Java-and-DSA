@@ -3,25 +3,25 @@ package Classes;
 public class staticInnerClass {
     public static void main(String[] args) {
 
-        Outer outer = new Outer();
+        Outer2 outer = new Outer2();
 
-        Outer.Inner inner = new Outer.Inner(outer);
+        Outer2.Inner inner = new Outer2.Inner(outer);
         inner.fun();
     }
 }
 
 // Static nested class
-class Outer {
+class Outer2 {
     private static int x = 4;
     int y;
 
     static class Inner {
 
-        Outer outer;
+        Outer2 outer;
         private String name;
         private static int number;
 
-        Inner(Outer outer) {
+        Inner(Outer2 outer) {
             this.outer = outer;
         }
 
