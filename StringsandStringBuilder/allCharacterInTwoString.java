@@ -22,3 +22,10 @@ public class allCharacterInTwoString {
     }
     
 }
+/*
+                int num=ch-'0';
+                char ch1=s.charAt(i-1); previous character
+                int ascii=(int)ch1;      char to ascii
+                int newAscii=ascii+num;
+                char ch2=(char)newAscii; ascii to char
+                */
