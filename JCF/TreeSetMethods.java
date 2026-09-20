@@ -4,10 +4,8 @@ import java.util.*;
 
 public class TreeSetMethods {
      public static void main(String[] args) {
-        // TreeSet
-
-        TreeSet<Integer> set = new TreeSet<>();
-
+        
+        TreeSet<Integer> set=new TreeSet<>();
         //Set<Integer> set2 = new TreeSet<>(List.of(2,5,7,9));
 
         set.add(80);
@@ -15,18 +13,20 @@ public class TreeSetMethods {
         set.add(10);
         set.add(90);
         set.add(50);
-   
 
-    //     // SortedSet Interface --> O(log N)
-        System.out.println(set.first());
+        System.out.println(set.descendingSet());
+        //System.out.println(set);
+   
+        // SortedSet Interface --> O(log N)
+        /*System.out.println(set.first());
         System.out.println(set.last());
 
-        System.out.println(set.headSet(80));
+        System.out.println(set.headSet(80)); Exclusive
 
         //fromElement is inclusive
        System.out.println(set.tailSet(80));
 
-       // fromELement is inclusice and toELement is Exclusive
+       // fromELement is inclusive and toELement is Exclusive
         System.out.println(set.subSet(23, 80));
 
     // // Navigable Set
@@ -56,7 +56,7 @@ public class TreeSetMethods {
 
         System.out.println(set.headSet(80, true));
         set.tailSet(80, false);
-        set.subSet(10, false, 80, true);
+        set.subSet(10, false, 80, true);*/
 
 
 
