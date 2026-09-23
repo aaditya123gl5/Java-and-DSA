@@ -128,8 +128,7 @@ public class MapMethods {
         // map1.clear();
 
         // 21. equals()
-        System.out.println("map1 equals map2: "
-                + map1.equals(map2));
+        System.out.println("map1 equals map2: "+ map1.equals(map2));
 
 
         // 22. hashCode()
