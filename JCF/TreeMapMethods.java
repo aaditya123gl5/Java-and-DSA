@@ -147,9 +147,7 @@ public class TreeMapMethods {
         // entrySet() + getKey() + getValue()
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
 
-            System.out.println(
-                    entry.getKey() + " -> " + entry.getValue()
-            );
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
 
         System.out.println("Final Map: " + map);
