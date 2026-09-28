@@ -9,7 +9,7 @@ public class MapMethods {
         HashMap<Integer, String> map1 = new HashMap<>();
 
         // 2. Constructor with initial capacity
-        HashMap<Integer, String> map2 = new HashMap<>(100);
+        HashMap<Integer, String> map2 = new HashMap<>(120);
 
         // 3. Constructor with initial capacity and load factor
         HashMap<Integer, String> map3 = new HashMap<>(100, 0.8f);
