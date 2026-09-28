@@ -11,7 +11,7 @@ public class LocalClass {
 
 class Outer {
     void greet() {
-        int y = 7;
+        int y = 8;
             class Local {
             void sayHello() {
                 System.out.println(y);
