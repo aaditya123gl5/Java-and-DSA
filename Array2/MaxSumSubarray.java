@@ -1,5 +1,4 @@
 package Array2;
-import java.util.*;
 
 public class MaxSumSubarray {
     public static void main(String[] args){
