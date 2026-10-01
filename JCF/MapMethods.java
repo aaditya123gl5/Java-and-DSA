@@ -1,6 +1,9 @@
 package JCF;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MapMethods {
@@ -60,6 +63,11 @@ public class MapMethods {
         // 9. keySet()
         // Returns all keys as a Set.
         System.out.println("keySet: " + map1.keySet());
+
+        /*List<Integer> keyList = new ArrayList<>(map.keySet()); Get the set of keys using keySet() and convert to a List
+        Collections.sort(keyList);                                
+        Covert to Integer array
+        Integer[] sortedKey= keyList.toArray(new Integer[0]); */
 
 
         // 10. values()
