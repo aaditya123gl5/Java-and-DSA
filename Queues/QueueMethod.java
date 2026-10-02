@@ -10,6 +10,7 @@ public class QueueMethod {
         queue.offer(20);          // Adds element, returns false if failed (Thread safe)
         queue.add(30);
         queue.offer(40);
+        queue.offer(50);
 
         // ACCESS FRONT
         System.out.println(queue.element());  // Returns front, exception if empty
