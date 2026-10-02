@@ -1,10 +1,6 @@
 package JCF;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MapMethods {
     public static void main(String[] args) {
@@ -26,7 +22,7 @@ public class MapMethods {
         map1.put(102, "Rohit");
         map1.put(103, "Rohan");
 
-        System.out.println("Map: " + map1);
+        System.out.println("Map: "+ map1);
 
 
         // 2. get(key)
