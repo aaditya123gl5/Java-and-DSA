@@ -36,7 +36,7 @@ class Animal2 {
     }
 
     void walk() {
-        System.out.println("Walking");
+        System.out.println("Walking daily");
     }
 }
 
