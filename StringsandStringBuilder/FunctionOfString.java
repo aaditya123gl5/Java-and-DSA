@@ -21,6 +21,7 @@ public class FunctionOfString {
 
         // System.out.println(s1.equals(s2));  // false
         // System.out.println(s1.equalsIgnoreCase(s2)); // true
+        //System.out.println(s1.contains(s2));// to check s2 is substring of s1
 
         // Lexicographical comparison --> Dictionary
         //System.out.println(s1.compareTo(s2));
