@@ -2,7 +2,7 @@ package Array2;
 
 public class MaxSumSubarray {
     public static void main(String[] args){
-       int[] arr={100,200,50,0,200,20,10};
+       int[] arr={100,200,50,0,200,20,10,11};
        int N=arr.length;
        int k=2;
        int sum=0;
