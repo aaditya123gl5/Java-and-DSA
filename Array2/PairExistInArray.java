@@ -1,8 +1,8 @@
 package Array2;
 
-public class TwoPointer
+public class PairExistInArray
 {
-    public static boolean isPairSum(int A[], int N, int X)
+    public static boolean ispairSum(int A[], int N, int X)
     {
         int i = 0;
         int j = N - 1;
@@ -21,6 +21,6 @@ public class TwoPointer
         int arr[] = {3, 5, 9, 2, 8, 10, 11};
         int val = 17;
         int arrSize = arr.length;
-        System.out.println(isPairSum(arr, arrSize, val));
+        System.out.println(ispairSum(arr, arrSize, val));
     }
 }
