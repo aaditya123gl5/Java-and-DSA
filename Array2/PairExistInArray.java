@@ -18,7 +18,7 @@ public class PairExistInArray
     }
     public static void main(String[] args)
     {
-        int arr[] = {3, 5, 9, 2, 8, 10, 11};
+        int arr[] = {3,5,9,2,8,10,11};
         int val = 17;
         int arrSize = arr.length;
         System.out.println(ispairSum(arr, arrSize, val));
