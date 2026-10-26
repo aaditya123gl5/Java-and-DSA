@@ -1,9 +1,8 @@
 package DivideAndConquer;
 
 public class MaxMin {
-    int[] a = {8,12,0,-6,15,20,3,64,9};
+    int[] a = {8,12,0,-6,15,20,3,64,11};
     int maximum, minimum;
-
     public static void main(String[] args) {
 
         MaxMin obj = new MaxMin();
@@ -22,7 +21,7 @@ public class MaxMin {
         }
 
         else if (i==j - 1) {
-            
+
             if (a[i] < a[j]) {
                 maximum = a[j];
                 minimum = a[i];
