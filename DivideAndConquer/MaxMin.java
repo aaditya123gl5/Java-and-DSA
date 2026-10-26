@@ -21,7 +21,8 @@ public class MaxMin {
             minimum = a[i];
         }
 
-        else if (i == j - 1) {
+        else if (i==j - 1) {
+            
             if (a[i] < a[j]) {
                 maximum = a[j];
                 minimum = a[i];
