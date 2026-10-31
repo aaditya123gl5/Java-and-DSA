@@ -9,37 +9,37 @@ public class MaxMin {
 
         obj.findMaxMin(0, 8);
 
-        System.out.println("Maximum element: " + obj.maximum);
-        System.out.println("Minimum element: " + obj.minimum);
+        System.out.println("Maximum element:"+obj.maximum);
+        System.out.println("Minimum element:"+obj.minimum);
     }
 
     void findMaxMin(int i, int j) {
 
-        if (i == j) {
-            maximum = a[i];
-            minimum = a[i];
+        if (i==j) {
+            maximum=a[i];
+            minimum=a[i];
         }
 
         else if (i==j-1) {
 
             if (a[i] < a[j]) {
-                maximum = a[j];
-                minimum = a[i];
+                maximum=a[j];
+                minimum=a[i];
             } else {
-                maximum = a[i];
-                minimum = a[j];
+                maximum=a[i];
+                minimum=a[j];
             }
         }
 
         else {
-            int mid = (i + j)/2;
+            int mid=(i+j)/2;
 
-            findMaxMin(i, mid);
+            findMaxMin(i,mid);
 
-            int max1 = maximum;
-            int min1 = minimum;
+            int max1=maximum;
+            int min1=minimum;
 
-            findMaxMin(mid + 1, j);
+            findMaxMin(mid+1,j);
 
             int max2 = maximum;
             int min2 = minimum;
